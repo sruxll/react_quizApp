@@ -1,0 +1,49 @@
+.login-signup-container{
+    display: grid;
+    grid-template-columns: 70% 30% 70%;
+    width: 60%;
+    height: 400px;
+    background-color: #f5f5f5;
+    padding: 0px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #000;
+    overflow: hidden;
+    transition: 0.3s linear;
+}
+.login-signup-container.active{
+    grid-template-columns: 0% 30% 70%;
+    transition: 0.3s linear;
+}
+.login-signup-container .side-div {
+    width: 100%;
+    height: 100%;  
+    display: flex;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
+    url("/Users/lili/Desktop/EnglishTeacher_Jack/reactApp_quiz/loginBackground2.png");
+    background-size: cover;
+    background-position: center;
+    justify-content: center;  
+}
+.login-signup-container .side-div button{
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+    font-size: 0.99ren;
+    transition: 0.3s linear
+}
+.login-signup-container .side-div button:hover {
+    background-color: rgb(91, 88, 88);
+    border: 1px solid rgb(91, 88, 88);
+}
+/* .login-signup-container .login-container {
+    grid-column: 1;
+    grid-row: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-right: 1px solid #000;
+} */
